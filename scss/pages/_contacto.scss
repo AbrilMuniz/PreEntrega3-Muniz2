@@ -1,0 +1,103 @@
+$color-fondo: white;
+
+main {
+    .contacto1 {
+        background-color: $color-fondo;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+
+        .contenedor1 {
+            text-align: center;
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 10px;
+                animation: fadeIn 1s ease-in-out;
+            }
+        }
+    }
+
+    .contacto2 {
+        background-color: $color-fondo;
+        padding: 20px;
+        text-align: center;
+
+        .contenedor2 {
+            text-align: center;
+
+            h2 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 1.2em;
+                margin-top: 20px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+
+            form {
+                margin-top: 20px;
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                input,
+                button {
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                    font-family: 'Montserrat', sans-serif;
+                    transition: border-color 0.3s;
+                    &:focus {
+                        outline: none;
+                        border-color: #333;
+                    }
+                }
+                button {
+                    background-color: #333;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    &:hover {
+                        background-color: #555;
+                    }
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .contacto1 {
+            padding: 50px;
+            margin: 50px;
+        }
+    }
+}

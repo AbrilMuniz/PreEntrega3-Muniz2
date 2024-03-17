@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-palette: (
+    color1: #F5F0EC,
+    color2: #CFA587,
+    color3: #C7B99B,
+    color4: #B07C6B
+);
+
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}

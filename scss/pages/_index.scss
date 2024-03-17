@@ -1,0 +1,201 @@
+.primer-texto {
+    padding: 1rem;
+}
+
+.parrafo1 h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.parrafo1 p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cotizar {
+    background-color: #B07C6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button cotizar {
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .primer-texto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imagencel {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .cotizar {
+        background-color: #B07C6B;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+.primer-texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.imagencel {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.cotizar {
+    background-color: #B07C6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+}
+
+.beneficios {
+    background-color: #C7B99B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.beneficio1,
+.beneficio2,
+.beneficio3 {
+    margin-bottom: 30px;
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+    width: 50px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .beneficios {
+        flex-direction: row;
+    }
+
+    .beneficio1,
+    .beneficio2,
+    .beneficio3 {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .beneficio3 {
+        margin-right: 0;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Estilos para pantallas aún más grandes */
+    .beneficios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .beneficio1,
+    .beneficio2,
+    .beneficio3 {
+        width: 25%; 
+        margin-right: 30px
+    }
+}
+
+.contacto {
+    background-color: #F5F0EC;
+    padding: 50px;
+    text-align: center;
+}
+
+.seccion-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5F0EC;
+    border-radius: 10px;
+    box-shadow: black;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #B07C6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .formulario {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .formulario label,
+    .formulario input,
+    .formulario select,
+    .formulario button {
+        width: 100%;
+    }
+
+    .formulario button {
+        margin-top: 10px;
+    }
+}

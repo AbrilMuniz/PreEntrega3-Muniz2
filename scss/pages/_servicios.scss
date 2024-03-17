@@ -1,0 +1,71 @@
+.servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #B07C6B;
+}
+
+.servicio {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicio h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.servicio h3:last-child {
+    margin-bottom: 20px;
+}
+
+.servicio ul {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.servicio li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.servicio button.comprar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B07C6B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.servicio button.comprar:hover {
+    background-color: #ccc;
+}
+
+@media screen and (min-width: 1200px) {
+    .servicios {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .servicio {
+        flex: 0 0 45%;
+        max-width: 500px;
+    }
+}

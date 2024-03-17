@@ -1,0 +1,54 @@
+.nosotros-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+
+    .nosotros-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .nosotros-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .nosotros-text {
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    flex: 1;
+                    text-align: left;
+                }
+
+                h2 {
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .nosotros-image {
+                text-align: center;
+
+                img {
+                    max-width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                @media (min-width: 768px) {
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

@@ -1,62 +1,59 @@
-$imagen-fondo-contacto: url("/img/contacto-img.jpg");
+$color-fondo: white;
+$imagen-fondo: url('/img/contacto-img.jpg');
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+main {
+    .contacto1 {
+        background-color: $color-fondo;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        background-image: $imagen-fondo;
+        background-size: cover;
+        background-position: center;
 
-section {
-    padding: 20px;
-}
+        .container-contacto {
+            text-align: center;
 
-.contacto1 {
-    background-image: $imagen-fondo-contacto;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-
-    h2 {
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-}
-
-.contacto2 {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.contacto {
-    width: 45%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-
-    img {
-        max-width: 50px;
-        margin-bottom: 10px;
+            h2 {
+                font-size: 2em;
+                margin-bottom: 10px;
+                animation: fadeIn 1s ease-in-out;
+            }
+        }
     }
 
-    h3 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
+    .contacto2 {
+        background-color: $color-fondo;
+        padding: 20px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .contacto {
+                text-align: center;
+                flex: 1;
+
+                img {
+                    width: 50px;
+                }
+
+                h3 {
+                    font-size: 1em;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
     }
 
-    p {
-        font-size: 1em;
-        color: #333;
+    @media (min-width: 768px) {
+        .contacto1 {
+            padding: 50px;
+            margin: 50px;
+        }
     }
 }

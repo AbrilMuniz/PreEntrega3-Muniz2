@@ -17,6 +17,7 @@ $imagen-fondo: url('/img/contacto-img.jpg');
 
 /* Estilos para la sección de contacto1 */
 .contenido {
+    background-color: white;
     text-align: center;
     padding: 20px;
 
@@ -124,6 +125,18 @@ h3 {
 form {
     margin-inline: 20px;
 }
+
+@media (min-width: 768px) {
+form {
+    margin-inline: 200px;
+}
+}
+
+@media (min-width: 1200px) {
+    form {
+        margin-inline: 400px;
+    }
+    }
 
 button {
     padding: 15;

@@ -414,6 +414,7 @@ button:hover {
 }
 /* Estilos para la sección de contacto1 */
 .contenido {
+  background-color: white;
   text-align: center;
   padding: 20px;
 }

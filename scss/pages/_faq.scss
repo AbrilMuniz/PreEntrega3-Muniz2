@@ -1,5 +1,3 @@
-
-
 .faq-section {
     background-image: url("../img/faq-img.jpg");
     background-size: cover;
@@ -27,6 +25,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -66,15 +65,15 @@
             color: blue;
         }
 
-        .faq-toggle:checked ~ .question {
+        .faq-toggle:checked~.question {
             color: blue;
         }
 
-        .faq-toggle:checked ~ .answer {
+        .faq-toggle:checked~.answer {
             display: block;
         }
 
-        .faq-toggle:checked ~ .faq-toggle:checked ~ .answer {
+        .faq-toggle:checked~.faq-toggle:checked~.answer {
             display: none;
         }
     }

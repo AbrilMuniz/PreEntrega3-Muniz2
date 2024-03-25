@@ -10,7 +10,7 @@ header {
     width: 100%;
 
     .logo-container {
-        display: none; // Ocultar el logotipo por defecto
+        display: none;
     }
 
     ul li {
@@ -29,8 +29,9 @@ header {
 
     @media (min-width: 768px) {
         .logo-container {
-            display: none; // Ocultar el logotipo en pantallas de 768px y 1200px
+            display: none;
         }
+
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: 100px;
@@ -44,10 +45,11 @@ header {
         }
     }
 
-    @media only screen and (min-width: 1200px){
+    @media only screen and (min-width: 1200px) {
         .logo-container {
-            display: none; // Ocultar el logotipo en pantallas de 768px y 1200px
+            display: none;
         }
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;

@@ -231,7 +231,9 @@ footer p {
   gap: 20px;
   padding: 20px;
 }
-.beneficios .beneficio1, .beneficios .beneficio2, .beneficios .beneficio3 {
+.beneficios .beneficio1,
+.beneficios .beneficio2,
+.beneficios .beneficio3 {
   background-color: #F5F0EC;
   padding: 30px;
   border-radius: 10px;
@@ -240,10 +242,14 @@ footer p {
   text-align: center;
   margin-bottom: 20px;
 }
-.beneficios .beneficio1:hover, .beneficios .beneficio2:hover, .beneficios .beneficio3:hover {
+.beneficios .beneficio1:hover,
+.beneficios .beneficio2:hover,
+.beneficios .beneficio3:hover {
   transform: translateY(-5px);
 }
-.beneficios .beneficio1.fade-up, .beneficios .beneficio2.fade-up, .beneficios .beneficio3.fade-up {
+.beneficios .beneficio1.fade-up,
+.beneficios .beneficio2.fade-up,
+.beneficios .beneficio3.fade-up {
   animation: fadeUp 0.5s forwards;
 }
 @keyframes fadeUp {
@@ -256,16 +262,22 @@ footer p {
     transform: translateY(0);
   }
 }
-.beneficios .beneficio1 img, .beneficios .beneficio2 img, .beneficios .beneficio3 img {
+.beneficios .beneficio1 img,
+.beneficios .beneficio2 img,
+.beneficios .beneficio3 img {
   max-width: 80%;
   height: auto;
   margin-bottom: 10px;
 }
-.beneficios .beneficio1 h3, .beneficios .beneficio2 h3, .beneficios .beneficio3 h3 {
+.beneficios .beneficio1 h3,
+.beneficios .beneficio2 h3,
+.beneficios .beneficio3 h3 {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-.beneficios .beneficio1 p, .beneficios .beneficio2 p, .beneficios .beneficio3 p {
+.beneficios .beneficio1 p,
+.beneficios .beneficio2 p,
+.beneficios .beneficio3 p {
   margin: 0;
   font-size: 0.8em;
 }
@@ -552,7 +564,8 @@ form input {
   margin-bottom: 10px;
   border: 1px solid gray;
   border-radius: 5px;
-  box-sizing: border-box; /* Incluye el padding y border en el ancho */
+  box-sizing: border-box;
+  /* Incluye el padding y border en el ancho */
 }
 form button {
   width: 100%;

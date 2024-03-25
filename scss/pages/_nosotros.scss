@@ -19,6 +19,8 @@
 
             .nosotros-text {
                 text-align: center;
+                opacity: 0;
+                animation: fadeUp 1s forwards;
 
                 @media (min-width: 768px) {
                     flex: 1;
@@ -37,6 +39,8 @@
 
             .nosotros-image {
                 text-align: center;
+                opacity: 0;
+                animation: fadeIn 1s forwards;
 
                 img {
                     max-width: 100%;
@@ -50,5 +54,25 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

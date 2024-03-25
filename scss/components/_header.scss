@@ -9,13 +9,30 @@ header {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 
+    .logo-container {
+        display: none; // Ocultar el logotipo por defecto
+    }
+
     ul li {
         margin-bottom: 0.5rem;
     }
 
+    @media (min-width: 350px) {
+        .logo-container {
+            display: block;
+            width: 20%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
     @media (min-width: 768px) {
+        .logo-container {
+            display: none; // Ocultar el logotipo en pantallas de 768px y 1200px
+        }
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-rows: 100px;
         text-align: left;
         padding: 1rem;
@@ -28,6 +45,9 @@ header {
     }
 
     @media only screen and (min-width: 1200px){
+        .logo-container {
+            display: none; // Ocultar el logotipo en pantallas de 768px y 1200px
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
